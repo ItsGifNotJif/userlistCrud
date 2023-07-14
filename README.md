@@ -15,6 +15,8 @@ Navigational buttons to return to mainpage, create new user.
 
 Search is fully functional, can search by any alphabetical character.
 
+Uses portions of bootstrap for styling.
+
 Uses these dependencies:
 
 ` dotenv, ejs, express, express-ejs-layouts, express-flash, express-flash-message, express-session, method-override, mongoose `
