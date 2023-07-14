@@ -15,3 +15,18 @@ Navigational buttons to return to mainpage, create new user.
 
 Search is fully functional, can search by any alphabetical character.
 
+Uses these dependencies:
+` "dependencies": {
+        "dotenv": "^16.3.1",
+        "ejs": "^3.1.9",
+        "express": "^4.18.2",
+        "express-ejs-layouts": "^2.5.1",
+        "express-flash": "^0.0.2",
+        "express-flash-message": "^2.1.0",
+        "express-session": "^1.17.3",
+        "method-override": "^3.0.0",
+        "mongoose": "^7.3.4"
+      },
+      "devDependencies": {
+        "nodemon": "^3.0.1"
+      }`
