@@ -48,11 +48,39 @@
                     <i>Redaguoti</i>
                   </a>
 
-                  <form action="/edit/<%= element._id %>?_method=DELETE" method="POST" class="position-relative">
-                    <button type="submit" class="btn btn-danger btn-small">
-                      <i>Ištrinti</i>
-                    </button>
-                  </form>
+                  <!-- Button to trigger the delete modal -->
+                  <button type="button" class="btn btn-danger btn-small" data-bs-toggle="modal"
+                    data-bs-target="#deleteModal<%= element._id %>">
+                    <i>Ištrinti</i>
+                  </button>
+
+                  <!-- Delete modal -->
+                  <div class="modal fade" tabindex="-1" role="dialog" id="deleteModal<%= element._id %>">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <div class="modal-title">Vartotojas bus ištrintas</div>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body customerIdentification">
+                          <p>
+                            Vartotojas<b class="fw-bold">
+                              <%= element.firstName %>
+                                <%= element.lastName %>
+                            </b><br />
+                            bus ištrintas
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Uždaryti</button>
+                          <form action="/edit/<%= element._id %>?_method=DELETE" method="POST"
+                            class="position-relative">
+                            <button type="submit" class="btn btn-primary">Taip, ištrinti vartotoją</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </td>
             </tr>
