@@ -32,4 +32,4 @@ To start the app, after all dependencies are installed run:
 
 `npm start`
 
-##In **-.env*** file enter your MongoDB database string.
+## In **-.env*** file enter your MongoDB database string.
