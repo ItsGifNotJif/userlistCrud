@@ -22,3 +22,14 @@ Uses these dependencies:
 Additional devDependency:
 
 `nodemon`
+
+To install all dependencies, open project in terminal and enter:
+
+`npm install`
+
+This should install all required dependencies. 
+To start the app, after all dependencies are installed run:
+
+`npm start`
+
+In **.env** file enter your MongoDB database string.
